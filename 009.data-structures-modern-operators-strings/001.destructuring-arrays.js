@@ -3,7 +3,7 @@
 
     New ES6 concept that allows you to pick and choose what elements you want from the array.
 
-    It unpacks and array without destroying the original array.
+    It unpacks an array without destroying the original array.
 
     Simple destructuring -> See Example 1
 
@@ -41,7 +41,13 @@ const restaurant = {
             open: 0, // Open 24 hours
             close: 24,
         },
+    },
+    orderDelivery({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {
+        console.log(
+            `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+        );
     }
+
 }
 
 
