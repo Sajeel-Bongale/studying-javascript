@@ -7,6 +7,11 @@
     Function expression:
     const doStuff = function() {}  -> Think: expression has equals sign E = E
 
+    Iterables are arrays, sets, strings, maps BUT NOT objects. Spread operator works on iterables
+    (After 2018 they work on objects too)
+
+    Shallow copying
+
     Object.assign is used for creating shallow copies of objects
     (NOT reference copies which you get by doing:
         let obj = {a:1}
@@ -16,4 +21,9 @@
     This only creates a shallow copy in the sense that it does not copy deeply nested properties.
     For copying deeply nested properties you need a deep copy which can be done by external libraries
     like lodash
+
+    Spread operators can also be used to create shallow copies
+    const main = [1, 2, 3]
+    const mainCopy = [...main]
+
  */
