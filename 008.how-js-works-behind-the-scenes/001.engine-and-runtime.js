@@ -5,9 +5,9 @@
     browser becomes your runtime. When running in Node, node becomes your runtime. Inside this runtime is a
     javascript engine. The engine executes the compiled/interpreted (Just in Time compiled) javascript code.
     Chrome's JS engine is called the V8. It is the same one used by Node. Other browsers use different engines.
-    Inside the engine are 3 main components (at least when it comes to browser runtimes)
+    Inside the runtime are 3 main components (at least when it comes to browser runtimes)
 
-    1. The Call stack and Heap
+    1. The Call stack and Heap (Makes up the engine)
     The call stack holds the current execution context placed on top of one another with the most recent
     EC(Execution Context) being placed at the top of the stack. The heap is used for storing objects and acts as the
     memory store for the running program.
