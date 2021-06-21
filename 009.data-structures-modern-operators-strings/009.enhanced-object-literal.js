@@ -2,7 +2,7 @@
     Link: https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648565#overview
 
     With enhanced object literals you can now directly add existing properties to objects
-    that share the same name as an existing variable in the scope. -> See example 1
+    that share the same name as an existing variable in the same scope. -> See example 1
 
     You can also add functions to objects without having to declare the function keyword
     against the property. -> See example 2

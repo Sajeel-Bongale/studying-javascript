@@ -1,7 +1,7 @@
 /*
     Link: https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648507#questions
 
-    Never create arrow functions as methods(object property functions). This causes the this keyword to refer to
+    Never create arrow functions as methods(object literal property functions). This causes the this keyword to refer to
     the lexical scope and therefore, will result in inconsistent and wrong answers.
 
     Always use regular functions to define methods
