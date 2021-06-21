@@ -26,4 +26,18 @@
     const main = [1, 2, 3]
     const mainCopy = [...main]
 
+
+    // TODO Write the different ways for array traversal using different for loops
+    1. Regular for loop
+
+    2. for...of loop for array traversal
+
+    3. forEach loop
+
+
+    // TODO Write different ways for Object traversal
+
+    For keys: Object.keys(myObj) and then for...of loop
+    For values: Object.values(myObj) and then for...of loop
+    For values: Object.entries(myObj) and then for...of loop
  */
