@@ -1,4 +1,4 @@
-// TODO import this object everywhere in the section
+// TODO import this object everywhere in the section : Upgrade node for this purpose
 
 // Data needed for first part of the section
 export const restaurant = {
