@@ -1,17 +1,20 @@
 /*
+    ----------------
     Arrow functions do not have their own this. They get their this from the immediate parent scope.
 
+    ----------------
     Function declaration:
     function doStuff() {};
 
     Function expression:
     const doStuff = function() {}  -> Think: expression has equals sign E = E
 
+    ----------------
     Iterables are arrays, sets, strings, maps BUT NOT objects. Spread operator works on iterables
     (After 2018 they work on objects too)
 
+    ----------------
     Shallow copying
-
     Object.assign is used for creating shallow copies of objects
     (NOT reference copies which you get by doing:
         let obj = {a:1}
@@ -27,6 +30,7 @@
     const mainCopy = [...main]
 
 
+    ----------------
     // TODO Write the different ways for array traversal using different for loops
     1. Regular for loop
 
@@ -34,10 +38,21 @@
 
     3. forEach loop
 
-
+    ----------------
     // TODO Write different ways for Object traversal
 
     For keys: Object.keys(myObj) and then for...of loop
     For values: Object.values(myObj) and then for...of loop
     For values: Object.entries(myObj) and then for...of loop
+
+    ----------------
+    Set.has runs faster than Array.includes when searching for elements. Consider using set.has methods
+    Link: https://dev.to/arnaud/using-array-prototype-includes-vs-set-prototype-has-to-filter-arrays-41fg
+
+    ----------------
+    Values pulled out of input elements using
+    document.querySelector('input').value
+    always return strings irrespective of the type of input element it is.
+    Types text, number, date all return string values and not the corresponding data types
+    that you would expect
  */
