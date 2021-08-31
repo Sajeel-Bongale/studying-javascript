@@ -17,7 +17,7 @@
     Therefore when you update the values inside the function, it is the same object in the heap memory
     that is being updated, so those changes are reflected across the files.
 
-    That is why, you should be careful and mindful of the consequences when you pass objects as arguments
+    That is why, you should be mindful of the consequences when you pass objects as arguments
     to functions.
 
     Note: In Javascript there is no pass by reference, unlike how it appears to be. ALl the passed arguments
@@ -42,14 +42,16 @@ const checkIn = function (flightNum, passenger) {
         alert('Wrong passport!');
     }
 };
-// checkIn(flight, jonas);
 // Example 1 (uncomment for example)
+// checkIn(flight, jonas);
 // console.log(flight);
+
 // Example 2 (uncomment for example)
 // console.log(jonas);
+
 // Is the same as doing...
 // const flightNum = flight;
-// const passenger = jonas;
+// const passenger = jonas; // as seen in 008.how-js-works-behind-the-scenes/007.primitive-vs-objects.js
 const newPassport = function (person) {
     person.passport = Math.trunc(Math.random() * 100000000000);
 };

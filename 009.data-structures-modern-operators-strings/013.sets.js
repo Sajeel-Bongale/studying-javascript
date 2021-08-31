@@ -11,7 +11,7 @@
 
     The order of the elements in sets is immaterial.
 
-    TO get the size of the set use set.size property -> See example 3
+    To get the size of the set use set.size property -> See example 3
 
     You can use the has method on the set to check if an element is present in the set. -> See example 4
 
@@ -77,6 +77,6 @@ for (const order of ordersSet) console.log(order);
 // Example 9
 const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
 const staffUnique = [...new Set(staff)];
-console.log(staffUnique);
+console.log("staffUnique: ", staffUnique);
 
 
