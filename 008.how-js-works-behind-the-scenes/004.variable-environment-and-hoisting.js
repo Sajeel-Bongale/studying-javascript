@@ -72,7 +72,7 @@ console.log(addDecl(2, 3)); // Works
 console.log(addExprVar(2, 3)); // throws error saying addExprVar is not a function -
                                     // because it is a hoisted var holding a value of undefined
 
-console.log(addArrowConst(2,3));// throws error saying cannot access addExprConst before initialization -
+console.log(addExprConst(2,3));// throws error saying cannot access addExprConst before initialization -
                                      // because it is a const and being accessed in the TDZ
 
 
