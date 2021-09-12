@@ -89,6 +89,7 @@ let foo = {
 }
 
 /*
+
 Memory management using heap
 
 
@@ -99,4 +100,6 @@ foo.print() => 'Robin'
 
 // NameBuilder().setFirstName('John').setLastName('Doe').build() => 'John Doe'
 // NameBuilder().setFirstName('John').build() => 'John'
-// NameBuilder().build() => ''*/
+// NameBuilder().build() => ''
+
+*/

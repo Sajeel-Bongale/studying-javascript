@@ -15,7 +15,7 @@
     NaN means invalid number.
 
     Type coercion happens whenever an operator is dealing with two values that are of different types.
-    In this case JS will convert one value to the type of other behind the scenes to make the comparision
+    In this case JS will convert one value to the type of other behind the scenes to make the comparison
     happen. -> See example 3
 
     Type coercion depends on the operator being used.
@@ -30,7 +30,7 @@ age = Number(age);
 console.log(age + 10);
 
 // Example 2
-console.log(Number('age'));
+console.log(Number('age')); // returns NaN error
 
 // Example 3
 console.log('I am ' + 23 + ' years old');

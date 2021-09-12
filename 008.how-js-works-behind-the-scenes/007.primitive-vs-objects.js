@@ -33,7 +33,7 @@
     the identifier to the new address. (As happens in step 3). That is why the old variable holds the
     copied value while the newly assigned variable holds a new value.
 
-    This does not happen with objects because fundamentally objects are stored in the heap memeory.
+    This does not happen with objects because fundamentally objects are stored in the heap memory.
     Why? Because objects can be large and will fill up the stack memory quickly if they are stored there.
 
     When a new object is created it is stored in the heap memory and is given an address. This address is

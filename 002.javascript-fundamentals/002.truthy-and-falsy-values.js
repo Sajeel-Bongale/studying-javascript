@@ -11,11 +11,11 @@
     JS performs type coercion to booleans in two cases: when using operators and when using if blocks.
  */
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean('Jonas'));
-console.log(Boolean({}));
-console.log(Boolean(''));
+console.log(Boolean(0)); // false
+console.log(Boolean(undefined)); // false
+console.log(Boolean('Jonas')); // true
+console.log(Boolean({})); // true
+console.log(Boolean('')); // false
 
 // Example 1
 let money = 0;
