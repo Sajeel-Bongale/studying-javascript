@@ -10,6 +10,7 @@
     This problem is solved by the nullish coalescing operator which moves to the next value
     in the chain only if the value on the left is undefined or null. -> See example 2
  */
+const restaurant = require('./000.setup-data');
 
 // Example 1
 restaurant.numGuests = 0;
@@ -19,5 +20,7 @@ console.log(guests);
 // Example 2
 // The Nullish Coalescing Operator
 // Nullish: null and undefined (NOT 0 or '')
-const guestCorrect = restaurant.numGuests ?? 10; // when numGuests is 0 it sets the const to 0, if undefined it will set to 10
-console.log(guestCorrect);
+
+// Below example works only in NodeJS v14 and above
+//const guestCorrect = restaurant.numGuests ?? 10; // when numGuests is 0 it sets the const to 0, if undefined it will set to 10
+//console.log(guestCorrect);

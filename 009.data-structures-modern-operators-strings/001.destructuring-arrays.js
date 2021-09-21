@@ -17,39 +17,7 @@
  */
 
 // Test Object
-const restaurant = {
-    name: 'Classico Italiano',
-    location: 'Via Angelo Tavanti 23, Firenze, Italy',
-    categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-    starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-    mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-
-    order: function (starterIndex, mainIndex) {
-        return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]]
-    },
-
-    openingHours: {
-        thu: {
-            open: 12,
-            close: 22,
-        },
-        fri: {
-            open: 11,
-            close: 23,
-        },
-        sat: {
-            open: 0, // Open 24 hours
-            close: 24,
-        },
-    },
-    orderDelivery({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {
-        console.log(
-            `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
-        );
-    }
-
-}
-
+const restaurant = require('./000.setup-data')
 
 // Example 1
 const arr = [2, 3, 4];
@@ -57,13 +25,13 @@ const a = arr[0];
 const b = arr[1];
 const c = arr[2];
 const [x, y, z] = arr;
-console.log(x, y, z);
-console.log(arr); // Original array not destroyed
+console.log(x, y, z); // prints 2 3 4
+console.log(arr); // prints [2, 3, 4] Original array not destroyed
 
 
 // Example 2
 let [main, , secondary] = restaurant.categories;
-console.log(main, secondary);
+console.log(main, secondary); // prints Italian Vegetarian
 
 
 // Example 3
@@ -74,13 +42,13 @@ console.log(main, secondary);
 // console.log(main, secondary);
 
 [main, secondary] = [secondary, main];
-console.log(main, secondary);
+console.log(main, secondary); // prints Vegetarian Italian
 
 
 //Example 4
 // Receive 2 return values from a function
 const [starter, mainCourse] = restaurant.order(2, 0);
-console.log(starter, mainCourse);
+console.log(starter, mainCourse); // prints Garlic Bread Pizza
 
 
 // Example 5
@@ -88,7 +56,8 @@ console.log(starter, mainCourse);
 const nested = [2, 4, [5, 6]];
 // const [i, , j] = nested;
 const [i, , [j, k]] = nested;
-console.log(i, j, k);  // 2 5 6
+console.log(i, j, k);  // prints 2 5 6
+
 // Default values
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r); // 8 9 1

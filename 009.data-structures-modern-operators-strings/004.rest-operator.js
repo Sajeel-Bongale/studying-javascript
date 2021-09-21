@@ -22,32 +22,7 @@
  */
 
 // Test Setup
-const restaurant = {
-    name: 'Classico Italiano',
-    location: 'Via Angelo Tavanti 23, Firenze, Italy',
-    categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-    starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-    mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-    openingHours: {
-        thur: {
-            open: 12,
-            close: 22,
-        },
-        fri: {
-            open: 11,
-            close: 23,
-        },
-        sat: {
-            open: 0, // Open 24 hours
-            close: 24,
-        },
-    },
-    orderPizza(mainIngredient, ...otherIngredients) {
-        console.log(mainIngredient);
-        console.log(otherIngredients);
-    }
-}
-
+const restaurant = require('./000.setup-data')
 
 // 1) Destructuring
 //  Example 1
@@ -55,7 +30,7 @@ const restaurant = {
 const arr = [1, 2, ...[3, 4]];
 // REST, because on LEFT side of =
 const [a, b, ...others] = [1, 2, 3, 4, 5];
-console.log(a, b, others);
+console.log(a, b, others); // prints 1 2 [3, 4, 5]
 
 
 //  Example 2
@@ -63,7 +38,7 @@ const [pizza, , risotto, ...otherFood] = [
     ...restaurant.mainMenu,
     ...restaurant.starterMenu,
 ];
-console.log(pizza, risotto, otherFood);
+console.log(pizza, risotto, otherFood); // prints Pizza Risotto [ 'Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad' ]
 
 
 //  Example 3

@@ -24,13 +24,7 @@ function orderPasta(ingredient1, ingredient2, ingredient3) {
     return `Here's your pasta with ${ingredient1}, ${ingredient2} and ${ingredient3}`
 }
 
-const restaurant = {
-    name: 'Classico Italiano',
-    location: 'Via Angelo Tavanti 23, Firenze, Italy',
-    categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-    starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-    mainMenu: ['Pizza', 'Pasta', 'Risotto']
-}
+const restaurant = require('./000.setup-data');
 
 // Example 1
 const arr = [7, 8, 9];
