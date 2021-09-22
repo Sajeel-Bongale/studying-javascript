@@ -32,7 +32,6 @@
  */
 
 
-
 // Example 1
 const ordersSet = new Set([
     'Pasta',
@@ -42,41 +41,40 @@ const ordersSet = new Set([
     'Pasta',
     'Pizza',
 ]);
-console.log(ordersSet);
+console.log(ordersSet); // prints Set { 'Pasta', 'Pizza', 'Risotto' }
 
 // Example 2
-console.log(new Set('Jonas'));
+console.log(new Set('Jonas')); // prints Set { 'J', 'o', 'n', 'a', 's' }
 
 console.log(
-    new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size
+    new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size // prints 3
 );
-console.log(new Set('jonasschmedtmann').size);
+console.log(new Set('jonasschmedtmann').size); // prints 11
 
 
 // Example 3
-console.log(ordersSet.size);
+console.log(ordersSet.size); // prints 3
 
 // Example 4
-console.log(ordersSet.has('Pizza'));
-console.log(ordersSet.has('Bread'));
+console.log(ordersSet.has('Pizza'));  // prints true
+console.log(ordersSet.has('Bread'));  // prints false
 
 // Example 5
-ordersSet.add('Garlic Bread');
-ordersSet.add('Garlic Bread');
+ordersSet.add('Garlic Bread'); // Adds Garlic Bread to the set
+ordersSet.add('Garlic Bread'); // Does nothing because garlic bread is already added
 
 // Example 6
-ordersSet.delete('Risotto');
+ordersSet.delete('Risotto'); // Removes risotto from the Set
 
 // Example 7
-// ordersSet.clear();
-console.log(ordersSet);
+// ordersSet.clear(); // Clears the set
+console.log(ordersSet); // prints Set { 'Pasta', 'Pizza', 'Garlic Bread' }
 
 // Example 8
-for (const order of ordersSet) console.log(order);
+for (const order of ordersSet) console.log(order); // prints individual items
 
 // Example 9
 const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
 const staffUnique = [...new Set(staff)];
-console.log("staffUnique: ", staffUnique);
-
+console.log("staffUnique: ", staffUnique); // prints staffUnique:  [ 'Waiter', 'Chef', 'Manager' ]
 

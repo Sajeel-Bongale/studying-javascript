@@ -4,8 +4,8 @@
     When it comes to using OR and AND operators as short circuiting operators, it can lead to certain errors which are
     highlighted in the chapter 005.short-circuiting.js
 
-    To solve this issue, JS came out with the optional chaining operator in JS2020. This can be used to avoid the issues
-    of falsy values resulting in unwanted results.
+    To solve this issue, JS came out with the optional chaining operator(?.) in ES2020.
+    This can be used to avoid the issues of falsy values resulting in unwanted results.
 
 
     The optional chaining operator lets you check if a property on an object exists before trying
@@ -29,28 +29,14 @@
  */
 
 // Test Setup
-const restaurant = {
-    name: 'Classico Italiano',
-    location: 'Via Angelo Tavanti 23, Firenze, Italy',
-    categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-    starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-    mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-    openingHours: {
-        sat: {
-            open: 12,
-            close: 23
-        }
-    }
-}
+const restaurant = require('./000.setup-data')
 
 if (restaurant.openingHours && restaurant.openingHours.mon) // the older way to prevent chaining errors
-    console.log(restaurant.openingHours.mon.open); // since mon doesn't exist earlier it could throw an error
-// console.log(restaurant.openingHours.mon.open);
+//    console.log(restaurant.openingHours.mon.open); // since mon doesn't exist earlier it could throw an error
 
 // Example 1
 // WITH optional chaining
 console.log(restaurant.openingHours.mon?.open);
-console.log(restaurant.openingHours?.mon?.open);
 
 
 // Practical - Example 2

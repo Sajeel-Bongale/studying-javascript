@@ -13,8 +13,12 @@
 
     Use Object.entries(myObj) to retrieve an array containing arrays of key, value tuples. -> See example 3
 
+    Finally, we can use for...in to iterate over own enumberable keys. -> See example 4
+
+    See general-stuff-that-you-forget/001.general.js for concise explanation
  */
-import { restaurant } from './000.setup-data';
+
+const restaurant = require('./000.setup-data');
 
 // Test setup
 const { openingHours } = restaurant
@@ -41,3 +45,8 @@ for (const [day, { open, close }] of entries) { // using destructuring to extrac
     console.log(`On ${day} we open at ${open} and close at ${close}`);
 }
 
+// Example 4
+for (let day in openingHours) {
+    console.log(day); // Keys
+    console.log(openingHours[day]); // Values
+}
