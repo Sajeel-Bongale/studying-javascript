@@ -20,8 +20,8 @@
 // Working With Strings - Part 2
 const airline = 'TAP Air Portugal';
 // Example 1
-console.log(airline.toLowerCase());
-console.log(airline.toUpperCase());
+console.log(airline.toLowerCase());  // prints tap air portugal
+console.log(airline.toUpperCase()); // prints TAP AIR PORTUGAL
 
 // Practical Examples
 // Fix capitalization in name
@@ -39,29 +39,29 @@ const loginEmail = '  Hello@Jonas.Io \n';
 // const lowerEmail = loginEmail.toLowerCase();
 // const trimmedEmail = lowerEmail.trim();
 const normalizedEmail = loginEmail.toLowerCase().trim();
-console.log(normalizedEmail);
-console.log(email === normalizedEmail);
+console.log(normalizedEmail); // prints hello@jonas.io
+console.log(email === normalizedEmail); // prints true
 
 
 // Example 3
 // replacing
 const priceGB = '288,97£';
 const priceUS = priceGB.replace('£', '$').replace(',', '.');
-console.log(priceUS);
+console.log(priceUS); // prints 288.97$
 const announcement =
     'All passengers come to boarding door 23. Boarding door 23!';
-console.log(announcement.replace('door', 'gate'));
-// console.log(announcement.replaceAll('door', 'gate'));
-console.log(announcement.replace(/door/g, 'gate'));
+console.log(announcement.replace('door', 'gate')); // prints All passengers come to boarding gate 23. Boarding door 23!
+// console.log(announcement.replaceAll('door', 'gate')); // replaceAll is a new method so not implemented in NodeJS 12
+console.log(announcement.replace(/door/g, 'gate')); // prints All passengers come to boarding gate 23. Boarding gate 23!
 
 
 // Example 4
 const plane = 'Airbus A320neo';
-console.log(plane.includes('A320'));
-console.log(plane.includes('Boeing'));
-console.log(plane.startsWith('Airb'));
+console.log(plane.includes('A320')); // prints true
+console.log(plane.includes('Boeing'));  // prints false
+console.log(plane.startsWith('Airb'));  // prints true
 if (plane.startsWith('Airbus') && plane.endsWith('neo')) {
-    console.log('Part of the NEW ARirbus family');
+    console.log('Part of the NEW ARirbus family'); // prints this value
 }
 
 

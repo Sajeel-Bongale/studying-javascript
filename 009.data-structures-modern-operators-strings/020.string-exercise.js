@@ -24,5 +24,3 @@ flights.split("+").map(flight => {
     console.log(displayMessage.padStart(50, " "));
 });
 
-
-// console.log(flights.split("+"));

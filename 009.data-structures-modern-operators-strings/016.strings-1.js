@@ -29,29 +29,29 @@ const airline = 'TAP Air Portugal';
 const plane = 'A320';
 
 // Example 1
-console.log(plane[0]);
-console.log(plane[1]);
-console.log(plane[2]);
-console.log('B737'[0]);
+console.log(plane[0]); // prints A
+console.log(plane[1]); // prints 3
+console.log(plane[2]); // prints 2
+console.log('B737'[0]); // prints B
 
 // Example 2
-console.log(airline.length);
-console.log('B737'.length);
+console.log(airline.length); // prints 16
+console.log('B737'.length); // prints 4
 
 // Example 3
-console.log(airline.indexOf('r'));
-console.log(airline.lastIndexOf('r'));
-console.log(airline.indexOf('portugal'));
+console.log(airline.indexOf('r')); // prints 6
+console.log(airline.lastIndexOf('r')); // prints 10
+console.log(airline.indexOf('portugal')); // prints -1
 
 // Example 4
-console.log(airline.slice(4));
-console.log(airline.slice(4, 7));
+console.log(airline.slice(4)); // prints Air Portugal
+console.log(airline.slice(4, 7)); // prints Air
 
 // Example 5
-console.log(airline.slice(0, airline.indexOf(' ')));
-console.log(airline.slice(airline.lastIndexOf(' ') + 1));
-console.log(airline.slice(-2));
-console.log(airline.slice(1, -1));
+console.log(airline.slice(0, airline.indexOf(' '))); // prints TAP
+console.log(airline.slice(airline.lastIndexOf(' ') + 1)); // prints Portugal
+console.log(airline.slice(-2)); // prints al
+console.log(airline.slice(1, -1)); // prints AP Air Portuga
 
 // Example 5
 const checkMiddleSeat = function (seat) {
@@ -60,11 +60,12 @@ const checkMiddleSeat = function (seat) {
     if (s === 'B' || s === 'E') console.log('You got the middle seat 😬');
     else console.log('You got lucky 😎');
 };
-checkMiddleSeat('11B');
-checkMiddleSeat('23C');
-checkMiddleSeat('3E');
+
+checkMiddleSeat('11B'); // prints You got the middle seat 😬
+checkMiddleSeat('23C'); // prints You got lucky �
+checkMiddleSeat('3E'); // prints You got the middle seat 😬
 
 // Example 6
-console.log(new String('jonas'));
-console.log(typeof new String('jonas'));
-console.log(typeof new String('jonas').slice(1));
+console.log(new String('jonas')); // peints [String: 'jonas']
+console.log(typeof new String('jonas')); // prints object
+console.log(typeof new String('jonas').slice(1)); // prints string
