@@ -102,8 +102,8 @@
     indexOf(), lastIndexOf() -                  Returns the first/ last index of passed searchValue in current string
     Params - searchValue
 
-    padStart(), padEnd() -                      Pads the current string with the padString parameter (repeated, if needed)
-    Params - targetLength, padString            so that the resulting string reaches a given length.
+    padStart(), padEnd() -                      Pads the current string with the padString parameter (repeated,
+    Params - targetLength, padString            if needed) so that the resulting string reaches a given length.
                                                 The padding is applied from the start/ end of the current string.
 
     includes(), startsWith(), endsWith() -      Returns a boolean notifying if the string contains/ starts with/
@@ -111,5 +111,6 @@
 
     trim(), trimStart(), trimEnd() -            The trim/ trimStart/ trimEnd methods removes whitespace from
                                                 everywhere/ beginning/ end of a string.
+   ----------------
 
  */
