@@ -113,4 +113,8 @@
                                                 everywhere/ beginning/ end of a string.
    ----------------
 
+    Properties observed in the console of dev tools that have double square brackets [[Scopes]]
+    are properties that are internal properties and we cannot access these from the code.
+
+
  */
