@@ -14,7 +14,7 @@
     
  */
 
-const movements = require('./000.setup-data')
+const { movements } = require('./000.setup-data')
 
 // Example 1
 const deposits = movements.filter(function (mov, i, arr) {

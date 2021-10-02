@@ -17,7 +17,7 @@
     The map method returns a new array and does not modify the original array.
 
  */
-const movements = require('./000.setup-data')
+const { movements } = require('./000.setup-data')
 
 const eurToUsd = 1.1; // conversion rate
 

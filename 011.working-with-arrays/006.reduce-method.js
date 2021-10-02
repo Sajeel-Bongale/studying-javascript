@@ -26,7 +26,7 @@
     The reduce method is the most powerful of the array methods.
  */
 
-const movements = require('./000.setup-data')
+const { movements } = require('./000.setup-data')
 
 // Example 1
 // const balance = movements.reduce(function (acc, cur, i, arr) {
