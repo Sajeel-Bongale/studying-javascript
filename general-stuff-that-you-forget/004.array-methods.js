@@ -31,5 +31,8 @@
                                                 preceding element. The final result of running the reducer across all
                                                 elements of the array is a single value.
 
+    find() -                                    Returns the value of the first element in the provided array that
+    Params - find callback                      satisfies the provided find function
+
 
  */
