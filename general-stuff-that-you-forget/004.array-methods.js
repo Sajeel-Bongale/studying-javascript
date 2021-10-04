@@ -31,8 +31,36 @@
                                                 preceding element. The final result of running the reducer across all
                                                 elements of the array is a single value.
 
-    find() -                                    Returns the value of the first element in the provided array that
-    Params - find callback                      satisfies the provided find function
+    push()                                      Adds one or more elements to the end of an array and
+    Params - ...elements                        returns the new length of the array.
+
+    pop() -                                     Removes the last element from the array and returns it
+
+    unshift() -                                 Adds one or more elements to the beginning of an array and
+    Params - ...elements                        returns the new length of the array.
+
+    shift() -                                   Removes the first element from an array and returns that removed element.
+                                                This method changes the length of the array.
 
 
- */
+    indexOf(), lastIndexOf() -                  Returns the first/ last index of passed searchElement in current array
+    Params - searchElement, fromIndex?          and returns -1 if not found. Tests for equality.
+
+    find(), findIndex() -                       Returns the value/ index of the first element in the provided array
+    Params - find callback                      that satisfies the provided find function. Tests for condition
+
+    includes() -                                Determines whether an array includes a certain value among its entries,
+    Params - searchElement, fromIndex?          returning true or false as appropriate. Tests for equality.
+
+    some(), every() -                           Tests whether at least one/ every element(s) in the array pass the test
+    Params - search callback                    implemented by the provided function. It returns true if, in the array,
+                                                it finds an element for which the provided function returns true;
+                                                otherwise it returns false. It doesn't modify the array.
+
+    flat() -                                    Creates a new array with all sub-array elements concatenated into it
+    Params - depth                              recursively up to the specified depth.
+
+
+    flatMap() -                                 Returns a new array formed by applying a given callback function to
+    Params - map callback                       each element of the array, and then flattening the result by one level.
+*/
