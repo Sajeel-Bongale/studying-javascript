@@ -63,4 +63,9 @@
 
     flatMap() -                                 Returns a new array formed by applying a given callback function to
     Params - map callback                       each element of the array, and then flattening the result by one level.
+
+    sort() -                                    Sorts the elements of an array in place and returns the sorted array.
+    Params - sort callback                      The sort callback helps to sort non string or complex values.
 */
+
+
