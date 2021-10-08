@@ -56,6 +56,7 @@
     Params - search callback                    implemented by the provided function. It returns true if, in the array,
                                                 it finds an element for which the provided function returns true;
                                                 otherwise it returns false. It doesn't modify the array.
+                                                Tests for condition
 
     flat() -                                    Creates a new array with all sub-array elements concatenated into it
     Params - depth                              recursively up to the specified depth.
