@@ -14,8 +14,20 @@
     You can pass the start(inclusive) and end(excluding) arguments to the fill method with the
     element to be inserted. -> See example 4
 
-    You can
+    You can create an array filled with the same values with another method. This method involves using the
+    from() static method on arrays.
+    The from() method takes an object in which you specify the length property. This determines how
+    many elements are going to be present in the array. The second argument is a map function using
+    which you can decide what your internal elements are going to look like.  -> See example 5
 
+    The map function is just like your regular map function in which it receives the element at hand
+    as the first argument, the index as the second and the array as the third argument.
+    Using these values you can create arrays that have complex values. -> See example 6
+
+    The from method is useful for creating arrays from other data structures because of the presence
+    of the map method. Any calculations and modifications can be performed in the mapping function.
+
+    Remember to pass an array or an array like data structure as the first argument to the from method.
  */
 
 
@@ -39,11 +51,18 @@ arr.fill(23, 2, 6);
 console.log(arr); // prints [1, 2, 23, 23, 23, 23, 7]
 
 
+// Example 5
 // Array.from
 const y = Array.from({ length: 7 }, () => 1);
-console.log(y);
+console.log(y); // prints [1, 1, 1, 1, 1, 1, 1]
+
+// Example 6
 const z = Array.from({ length: 7 }, (_, i) => i + 1);
-console.log(z);
+console.log(z); // prints [1, 2, 3, 4, 5, 6, 7]
+
+// Practical Example
+// Will work in the browser
+/*
 labelBalance.addEventListener('click', function () {
     const movementsUI = Array.from(
         document.querySelectorAll('.movements__value'),
@@ -52,3 +71,4 @@ labelBalance.addEventListener('click', function () {
     console.log(movementsUI);
     const movementsUI2 = [...document.querySelectorAll('.movements__value')];
 });
+*/
