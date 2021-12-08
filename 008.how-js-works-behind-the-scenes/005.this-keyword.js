@@ -87,19 +87,3 @@ let foo = {
         console.log(this.name)
     }
 }
-
-/*
-
-Memory management using heap
-
-
-foo.name => 'John'
-foo.print = foo.print.bind({name: 'Robin'})
-//Function.prototype.bind2
-foo.print() => 'Robin'
-
-// NameBuilder().setFirstName('John').setLastName('Doe').build() => 'John Doe'
-// NameBuilder().setFirstName('John').build() => 'John'
-// NameBuilder().build() => ''
-
-*/

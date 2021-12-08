@@ -27,7 +27,7 @@
 // Example 1
 let age = '18';
 age = Number(age);
-console.log(age + 10);
+console.log(age + 10); // returns 28
 
 // Example 2
 console.log(Number('age')); // returns NaN error

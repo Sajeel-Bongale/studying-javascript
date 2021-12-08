@@ -1,7 +1,7 @@
 /*
     Link: https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648181#overview
 
-    Im JS there are 5 falsy values 0, '', undefined, null, NaN and of course false itself.
+    In JS there are 5 falsy values 0, '', undefined, null, NaN and of course false itself.
 
     These values are not false initially but will be converted to false when converting them
     to boolean.
