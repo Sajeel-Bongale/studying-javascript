@@ -30,8 +30,8 @@
     Encapsulation means keeping some properties and method private inside the class so they are not accessible from
     outside the class. Some methods can be exposed as a public interface(API).
 
-    Inheritance makes all properties and methods of a class to all child classes. It thus, creates a hierarchical
-    relationship between classes. This allows us to reuse common logic.
+    Inheritance makes all properties and methods of a class accessible to all child classes. It thus, creates a
+    hierarchical relationship between classes. This allows us to reuse common logic.
 
     Polymorphism means a child class can overwrite a method inherited from a parent class.
 
