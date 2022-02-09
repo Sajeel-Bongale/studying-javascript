@@ -17,6 +17,11 @@
     parseFloat() -                              Parses an argument and returns a floating point number. If a number
     Params - valueInString                      cannot be parsed from the argument, it returns NaN.
 
+    toFixed() -                                 Formats a number such that it becomes a floating point number.
+    Params - digits                             Rounds of the newly created number to the number of digits mentioned
+                                                in the argument. 0 represents no decimal values. Returns a string
+                                                instead of number
+
     isNaN() -                                   Determines whether the passed value is NaN and its type is Number.
     Params - valueToTest                        It is a more robust version of the original, global isNaN().
 
@@ -27,4 +32,5 @@
 
     isInteger() -                               Determines whether the passed value is an integer.
     Params - valueToTest
+
 */
