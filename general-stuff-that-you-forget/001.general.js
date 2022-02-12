@@ -29,7 +29,6 @@
     const main = [1, 2, 3]
     const mainCopy = [...main]
 
-
     ----------------
     // TODO Write the different ways for array traversal using different for loops
     1. Regular for loop
@@ -47,6 +46,7 @@
     for...in:                   for(const property in obj) console.log(property + obj[property])
 
     See 009.data-structures-modern-operators-strings/011.looping-objects.js for examples
+    
     ----------------
     Set.has runs faster than Array.includes when searching for elements. Consider using set.has methods
     Link: https://dev.to/arnaud/using-array-prototype-includes-vs-set-prototype-has-to-filter-arrays-41fg
