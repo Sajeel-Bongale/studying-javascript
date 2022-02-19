@@ -15,7 +15,7 @@
     This generates an empty object, but one with the __proto__ property of the object set to
     PersonPrototype. -> See example 2
 
-    Finally you can add properties on this object manually or programmatically(using another) functions
+    Finally you can add properties on this object manually or programmatically (using other functions)
     and then populate it according to your needs. The methods on the prototype will be available
     for the object to call. -> See example 3
 
