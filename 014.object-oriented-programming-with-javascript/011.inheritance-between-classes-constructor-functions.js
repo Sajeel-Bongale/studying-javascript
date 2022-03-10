@@ -53,7 +53,7 @@
     4. Call parent constructor from with child constructor using the .call method by passing this as first
     argument and all other arguments needed after it.
     5. Do ChildClass.prototype.__proto__ = Parent.prototype -> Very imp for chaining classes
-    6. Create Parent.prototype methods
+    6. Create ChildClass.prototype methods
 
  */
 
