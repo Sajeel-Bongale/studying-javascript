@@ -28,7 +28,7 @@
 
     Number object has a method to check if any value is NaN(Not a Number). -> See example 9
 
-    There is a better to do this check. It is isFinite. It returns false when checking for a string
+    There is a better way to do this check. It is isFinite. It returns false when checking for a string
     holding a number. The same check fails with isNaN and for this reason, isFinite is better at
     checking if the passed argument is a valid number or not. -> See example 10
 

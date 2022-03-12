@@ -19,7 +19,7 @@
 
     To get the year from the date object that you have created you can use the getFullYear method.
     There is also a getYear method but avoid using that. Then there is getMonth method which returns a 0 based month
-    value. getDate returns the date and getDay returns which day of the month it is. getHours, getMinutes and
+    value. getDate returns the date and getDay returns which day of the week it is. getHours, getMinutes and
     getSeconds return the hours, minutes and seconds in the date object. -> See example 5
 
     There is a toISOString method that converts the number into universally accepted ISO format. -> See example 6

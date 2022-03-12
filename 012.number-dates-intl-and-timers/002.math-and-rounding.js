@@ -19,7 +19,7 @@
 
     We use Math.trunc to remove the fractional part of a number leaving only the integer. -> See example 7
 
-    Math.rounds rounds to the nearest integer. -> See example 8
+    Math.round rounds to the nearest integer. -> See example 8
 
     Both floor and trunc do the same thing for positive numbers. However, they do not behave the same way
     for negative numbers.

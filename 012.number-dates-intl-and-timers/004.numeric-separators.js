@@ -14,7 +14,7 @@
 
     The underscore must be within the number and not at the extremes or around decimals. -> See example 3
 
-    You should also not have a underscore in a string that you are trying to convert to a number. -> See example 4
+    You should also not have an underscore in a string that you are trying to convert to a number. -> See example 4
 
  */
 
