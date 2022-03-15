@@ -33,6 +33,8 @@
 
     You can similarly clear the interval using the clearInterval method by passing it the interval id. -> See example 6
 
+    Timers and intervals can be cleared from within themselves too. -> See example 7
+
  */
 
 // Example 1
@@ -64,3 +66,13 @@ const interval = setInterval(() => {
 
 // Example 6
 setTimeout(() => clearInterval(interval), 5000) // stop after 5 seconds
+
+// Example 7
+let i = 0
+const cancellableInterval = setInterval(() => {
+    console.log('Running with i: ', i);
+    i++;
+    if (i === 5) {
+        clearInterval(cancellableInterval);
+    }
+}, 1000);
