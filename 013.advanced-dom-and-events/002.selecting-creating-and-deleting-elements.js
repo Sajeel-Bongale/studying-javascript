@@ -5,7 +5,7 @@
 
     If you want to apply CSS styles to the entire page you will need to use the above documentElement property.
 
-    Similarly you can select the head and body as document.head and document.body.
+    Similarly, you can select the head and body as document.head and document.body.
 
     The above elements do not need the use of querySelector method.
 
@@ -27,8 +27,8 @@
 
     To create an element use the document.createElement method by passing an element name to it.
     This method does not add the element to the DOM. To do so we have to manually insert it there.
-    It is simply an element object created for that particular element name.
-    You can add classes and other attributes to the newly created element object. -> See example 7
+    It is simply an element object created for that particular element name. You can add classes
+    and other attributes to the newly created element object. -> See example 7
 
     There are other properties on this element such as textContent and innerHTML too. -> See example 8
 
@@ -44,7 +44,8 @@
     to the end in the last step.
 
     To create a copy of the element you will need to clone it using the cloneNode method available
-    on it.  -> See example 10
+    on it. The cloneNode takes one boolean argument which determines whether child elements should also
+    be replicated when cloning the parent node. -> See example 10
     Now once a copy of the element is created you can use it to insert it at another location in the DOM.
 
     The other methods to add to the DOM are before and after which add the newly created element as siblings,
@@ -55,8 +56,12 @@
 
     The remove method is a new addition to the API.
 
-    Without it we had to select the parentElement and then call the removeChild on the element we want to delete.
+    Without it, we had to select the parentElement and then call the removeChild on the element we want to delete.
+
  */
+
+// NOTE: Run the 000.setup-data.html project in the browser to observe the console logs
+// Included with the html is the CSS file as well as this JS file
 
 // Selecting, Creating, and Deleting Elements
 
@@ -68,13 +73,15 @@ console.log(document.body);
 
 // Example 2
 const header = document.querySelector('.header');
+console.log(header);
 
 // Example 3
 const allSections = document.querySelectorAll('.section');
 console.log(allSections);
 
 // Example 4
-document.getElementById('section--1');
+const section1 = document.getElementById('section--1');
+console.log(section1);
 
 // Example 5
 const allButtons = document.getElementsByTagName('button');
@@ -89,9 +96,9 @@ const message = document.createElement('div');
 message.classList.add('cookie-message');
 
 // Example 8
-// message.textContent = 'We use cookied for improved functionality and analytics.';
+// message.textContent = 'We use cookies for improved functionality and analytics.';
 message.innerHTML =
-    'We use cookied for improved functionality and analytics. <button class="btn btn--close-cookie">Got it!</button>';
+    'We use cookies for improved functionality and analytics. <button class="btn btn--close-cookie">Got it!</button>';
 
 // Example 9
 // header.prepend(message);
