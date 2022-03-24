@@ -35,7 +35,7 @@ body {
 
 /* GENERAL ELEMENTS */
 .section {
-    padding: 15rem 3rem;
+    padding: 5rem 3rem;
     border-top: 1px solid #ddd;
 
     transition: transform 1s, opacity 1s;
