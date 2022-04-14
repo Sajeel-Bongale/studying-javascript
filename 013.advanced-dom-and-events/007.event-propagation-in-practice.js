@@ -43,7 +43,7 @@
 
     The current target always equals the this keyword. -> See example 6
 
-    We also have the ability to stop the event propagation. -> See example 7
+    We also have the ability to stop the event propagation using event.stopPropagation method. -> See example 7
 
     All the above examples describe events in the target and bubbling phase. No handling has been done in
     the capture phase. Handling events in the bubbling phase is the default and usually the capturing phase
@@ -82,7 +82,7 @@ document.querySelector('.nav__link').addEventListener('click', function (e) {
     console.log('LINK: ', e.currentTarget); // prints .nav__link element
 
     // Example 7
-    // e.stopPropagation(); // uncomment to see event being stopped at the target itself and does not propagate any further
+    // e.stopPropagation(); // uncomment to see event being stopped at the target itself and not propagate any further
 });
 
 document.querySelector('.nav__links').addEventListener('click', function (e) {
