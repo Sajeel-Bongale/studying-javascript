@@ -1,8 +1,8 @@
 /*
     Link: https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648983#overview
 
-    In this section we want to make the navigation links on the navbar apart from the one hovered over appear faded
-    out. To do so we will use the event delegation. We will select the nav element. -> See example 1
+    In this section we want to make the navigation links on the navbar, apart from the one hovered over, appear faded
+    out. To do so we will use event delegation. We will select the nav element. -> See example 1
 
     We will attach the mouseover event listener to the nav element. -> See example 2
 
@@ -19,8 +19,8 @@
     We will now need to bring back the original opacity once the mouse leaves the link. We will undo everything
     in the new event listener by making the opacity 1. -> See example 4
 
-    Since the code is being repeated we can simply create a separate function called handleHover and the variable
-    values as arguments. -> See example 5
+    Since the code is being repeated we can simply create a separate function called handleHover and make the
+    variable values as arguments. -> See example 5
 
     Now we want to use this function as the argument to the event listeners. We cannot simply call the function
     as we attach it to the event listener as it immediately executes it and would not behave in the manner that

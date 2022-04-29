@@ -14,8 +14,8 @@
 
     When using event delegation we need to find a good element identifying strategy. In this scenario, there
     is a span inside the button and clicking on that span results in the selection of span inside the event
-    target and as a result we cannot use event.target as the element selection strategy. We could use select
-    the parent. However, this methods fails when clicking on the button.
+    target and as a result we cannot use event.target as the element selection strategy. We could select
+    the parent. However, this method fails when clicking on the button.
 
     The solution to this problem is to use the closest method to select the exact element(the button) from
     within the element target. Closest matches the nearest element or the same element if the selector
@@ -34,6 +34,7 @@
     using the data tab custom attribute that has been added to the tabs. -> See example 7
 
     We will have to remove the active class from the content divs just like we did for the tabs.  -> See example 8
+
  */
 
 // NOTE: Run the 000.setup-data.html project in the browser to observe the console logs
@@ -51,7 +52,6 @@ tabsContainer.addEventListener('click', function (e) {
 
     // Example 5
     if(!clicked) return;
-    console.log(clicked)
 
     // Example 6
     tabs.forEach(t => t.classList.remove('operations__tab--active'));
@@ -63,7 +63,8 @@ tabsContainer.addEventListener('click', function (e) {
     tabsContent.forEach(c => c.classList.remove('operations__content--active'))
 
     // Example 7
-    document.querySelector(`.operations__content--${clicked.dataset.tab}`).classList.add('operations__content--active')
+    document.querySelector(`.operations__content--${clicked.dataset.tab}`)
+        .classList.add('operations__content--active')
 });
 
 

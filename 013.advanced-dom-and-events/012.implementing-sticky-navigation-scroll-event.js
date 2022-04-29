@@ -10,7 +10,7 @@
     Inside this scroll event we will find the scroll location in terms of Y coordinates as we learnt
     earlier. This tells us how far from the top of the page the user has scrolled. -> See example 2
 
-    Now, to implement smooth scrolling we need to identify the position where we want to make the nav
+    Now, to implement sticky navbar we need to identify the position where we want to make the nav
     bar sticky. We will select the the beginning of the first section.
 
     We could hardcode the value of the start position of section-1 but that will not work because the

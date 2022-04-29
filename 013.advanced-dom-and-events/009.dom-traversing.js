@@ -17,7 +17,6 @@
     To get only elements(excluding text and comment nodes) you can use the children property. This only works
     for direct children. It returns an HTML collection. -> See example 4
 
-
     There are also firstElementChild and lastElementChild properties on the element. -> See example 5
 
     To go upwards in the DOM and selecting parents we have the parentNode as well as the parentElement
@@ -33,7 +32,7 @@
     previousElementSibling properties. -> See example 9
 
     Note: The word Node in the properties will result in any kind of node (element, text or comment). If you
-    want to find an element in specific you will need to use the property with the word element in it. The
+    want to find an element in specific you will need to use the property with the word Element in it. The
     difference can be illustrated in the parentNode and parentElement property names.
 
     If we want all the siblings for a given element we can go to the parentElement as we saw in example 6 and
