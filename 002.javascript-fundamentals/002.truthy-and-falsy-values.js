@@ -9,6 +9,7 @@
     Objects are truthy values
 
     JS performs type coercion to booleans in two cases: when using operators and when using if blocks.
+
  */
 
 console.log(Boolean(0)); // false
