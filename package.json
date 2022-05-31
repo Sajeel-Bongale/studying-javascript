@@ -1,0 +1,22 @@
+{
+  "name": "studying-javascript",
+  "version": "1.0.0",
+  "description": "Javascript Documentation based on Jonas Schmedtmann's Udemy course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sajeel-Bongale/studying-javascript.git"
+  },
+  "keywords": [
+    "JS"
+  ],
+  "author": "Sajeel Bongale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sajeel-Bongale/studying-javascript/issues"
+  },
+  "homepage": "https://github.com/Sajeel-Bongale/studying-javascript#readme"
+}
