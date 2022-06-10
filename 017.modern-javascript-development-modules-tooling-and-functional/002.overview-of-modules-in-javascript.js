@@ -40,7 +40,7 @@
 
     Third, the this keyword is always undefined at the top level while in scripts it points at the window object.
 
-    We can export and import values between modules using this ES6 import and experts syntax. In regular scripts,
+    We can export and import values between modules using this ES6 import and exports syntax. In regular scripts,
     importing and exporting values is just completely impossible.
 
     In order to link a module to an HTML file, we need to use the script tag with the type attribute set to module,

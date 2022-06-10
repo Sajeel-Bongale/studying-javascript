@@ -16,7 +16,6 @@
     One important implication of using top-level await is the fact that if one module imports a module which has a
     top-level await, then the importing module will wait for the imported module to finish the blocking code.
 
-
 */
 
 // Example 1
