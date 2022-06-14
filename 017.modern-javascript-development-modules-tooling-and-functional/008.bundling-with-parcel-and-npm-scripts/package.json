@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lodash-es": "4.17.21"
+    "core-js": "^3.23.0",
+    "lodash-es": "4.17.21",
+    "regenerator-runtime": "^0.13.9"
   },
   "devDependencies": {
     "parcel": "^2.6.0"

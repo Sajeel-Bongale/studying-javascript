@@ -1,6 +1,8 @@
 import {cloneDeep} from "lodash-es";
 // Importing this for the purpose of parcel demonstration
 import {addToCart} from "./shoppingCart";
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 
 const state = {
     cart: [
