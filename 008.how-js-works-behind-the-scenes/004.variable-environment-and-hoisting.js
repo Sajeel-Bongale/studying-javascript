@@ -43,6 +43,7 @@
     The only function that you can use before declaring is the function declaration
 
     Variables declared with let and const in the global scope do not attach themselves to the global object(window)
+
  */
 
 

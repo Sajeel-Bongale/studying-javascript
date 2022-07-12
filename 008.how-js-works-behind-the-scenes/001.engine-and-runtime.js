@@ -18,7 +18,7 @@
 
     3. Non blocking event loop - Callback Queue
     The Callback Queue holds the callbacks for events and asynchronous activities. Callbacks for events and other async
-    activities are  held separately and executed once the main thread becomes free. It is non blocking in the sense
+    activities are held separately and executed once the main thread becomes free. It is non blocking in the sense
     that it lets the main thread finish its execution and then looks into the Callback Queue to check if any callbacks
     are waiting for execution.
 

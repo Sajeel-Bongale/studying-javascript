@@ -10,7 +10,7 @@
     All functions create their own scope.
 
     Every internal scope has access to its parents scope. It uses this hierarchical chain to look for variables.
-    It is called as variable lookup.
+    It is called variable lookup.
 
     For variables declared with var block scopes don't apply at all because ES6 works with only ES6 constructs,
     and block scope is an ES6 construct. These vars become function scoped.
@@ -18,6 +18,7 @@
     Functions in strict mode are block scoped.
 
     Scopes of siblings are not accessible to siblings. see example 2 - line 40
+
  */
 
 // Example 1 of global and local scope

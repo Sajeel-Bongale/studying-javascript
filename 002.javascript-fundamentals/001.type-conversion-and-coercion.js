@@ -5,7 +5,7 @@
 
     Type conversion is when you manually convert one type to another.
 
-    Type coercion is when you JS converts one type to another automatically.
+    Type coercion is when JS converts one type to another automatically.
 
     To manually convert strings to numbers, use the Number() constructor -> See example 1
 

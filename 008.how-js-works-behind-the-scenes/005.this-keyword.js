@@ -27,6 +27,7 @@
     this will never point to the Variable Environment
 
  */
+
 'use strict' // comment out for example 2
 
 

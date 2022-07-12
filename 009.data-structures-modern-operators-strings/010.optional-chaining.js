@@ -7,13 +7,12 @@
     To solve this issue, JS came out with the optional chaining operator(?.) in ES2020.
     This can be used to avoid the issues of falsy values resulting in unwanted results.
 
-
     The optional chaining operator lets you check if a property on an object exists before trying
     to access the next item in the property chain. -> See example 1
     It checks if mon exists before trying to access the open property.
 
-    It acts like a short circuiting operator by returning an undefined
-    when a property that you are trying to access is not present on the object
+    It acts like a short circuiting operator by returning an undefined when a property that you are trying to access
+    is not present on the object
 
     You can use it to find items in array if they exist and then perform some logic on them. -> See example 2
     Here it is used in conjunction with the nullish coalesce operator to return a suitable value when the

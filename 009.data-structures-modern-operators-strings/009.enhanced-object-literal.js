@@ -8,6 +8,7 @@
     against the property. -> See example 2
 
     You can compute property names on the fly using the destructuring syntax. -> See example 3
+
  */
 
 const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];

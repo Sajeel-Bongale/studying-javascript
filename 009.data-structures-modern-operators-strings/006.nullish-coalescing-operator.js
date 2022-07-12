@@ -15,12 +15,9 @@ const restaurant = require('./000.setup-data');
 // Example 1
 restaurant.numGuests = 0;
 const guests = restaurant.numGuests || 10; // this returns 10 even though 0 is a valid value for numGuests
-console.log(guests);
+console.log(guests); // prints 10
 
 // Example 2
-// The Nullish Coalescing Operator
 // Nullish: null and undefined (NOT 0 or '')
-
-// Below example works only in NodeJS v14 and above
-//const guestCorrect = restaurant.numGuests ?? 10; // when numGuests is 0 it sets the const to 0, if undefined it will set to 10
-//console.log(guestCorrect);
+const guestCorrect = restaurant.numGuests ?? 10; // when numGuests is 0 it sets the const to 0, if undefined it will set to 10
+console.log(guestCorrect);

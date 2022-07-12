@@ -26,25 +26,25 @@ const restaurant = require('./000.setup-data')
 
 // Example 1
 console.log('---- OR ----');
-console.log(3 || 'Jonas');
-console.log('' || 'Jonas');
-console.log(true || 0);
-console.log(undefined || null);
-console.log(undefined || 0 || '' || 'Hello' || 23 || null);
+console.log(3 || 'Jonas'); // prints 3
+console.log('' || 'Jonas'); // prints 'Jonas;
+console.log(true || 0); // prints true
+console.log(undefined || null); // prints null
+console.log(undefined || 0 || '' || 'Hello' || 23 || null); // prints 'Hello'
 
 // Example 2
 restaurant.numGuests = 0; // comment this out to test the default feature using ||
 const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
-console.log(guests1);
+console.log(guests1); // prints 10
 const guests2 = restaurant.numGuests || 10;
-console.log(guests2);
+console.log(guests2); // prints 10
 
 
 // Example 3
 console.log('---- AND ----');
-console.log(0 && 'Jonas');
-console.log(7 && 'Jonas');
-console.log('Hello' && 23 && null && 'jonas');
+console.log(0 && 'Jonas'); // prints 0
+console.log(7 && 'Jonas'); // prints 'Jonas'
+console.log('Hello' && 23 && null && 'jonas'); // prints null
 
 // Example 4
 if (restaurant.orderPizza) {
