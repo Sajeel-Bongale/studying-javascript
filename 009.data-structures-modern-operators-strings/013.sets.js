@@ -29,6 +29,7 @@
 
     Traversing a set can be done using for...of because they are iterables. -> See example 8
     Spread operator can also be used on sets because they are iterables. -> See example 9
+
  */
 
 

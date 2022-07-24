@@ -34,6 +34,7 @@
     map constructor since maps are collection of entries (array of arrays). -> See example 7
 
     Since maps are iterables you can use the spread operator to destructure them.  -> See example 8
+
  */
 
 // Example 1
@@ -41,8 +42,6 @@ const rest = new Map();
 rest.set('name', 'Classico Italiano');
 rest.set(1, 'Firenze, Italy');
 console.log(rest.set(2, 'Lisbon, Portugal'));
-console.log('test 1');
-
 
 // Example 2
 rest
@@ -51,8 +50,6 @@ rest
     .set('close', 23)
     .set(true, 'We are open :D')
     .set(false, 'We are closed :(');
-console.log('test 2');
-
 
 // Example 3
 console.log(rest.get('name')); // prints Classico Italiano

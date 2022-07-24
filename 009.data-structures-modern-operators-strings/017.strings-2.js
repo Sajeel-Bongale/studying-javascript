@@ -14,6 +14,7 @@
     Whether a string starts with the given substring
     Whether a string ends with the given substring
     respectively
+
  */
 
 

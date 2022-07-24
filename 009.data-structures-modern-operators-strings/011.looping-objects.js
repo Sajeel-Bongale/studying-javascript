@@ -13,9 +13,10 @@
 
     Use Object.entries(myObj) to retrieve an array containing arrays of key, value tuples. -> See example 3
 
-    Finally, we can use for...in to iterate over own enumberable keys. -> See example 4
+    Finally, we can use for...in to iterate over own enumerable keys. -> See example 4
 
     See general-stuff-that-you-forget/001.general.js for concise explanation
+
  */
 
 const restaurant = require('./000.setup-data');
@@ -35,7 +36,6 @@ console.log(openStr);
 // Example 2
 const values = Object.values(openingHours);
 console.log(values);
-
 
 // Example 3
 const entries = Object.entries(openingHours);

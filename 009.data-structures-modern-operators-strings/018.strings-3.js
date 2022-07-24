@@ -10,6 +10,7 @@
     Strings can be padded at the start and end using the padStart and padEnd methods. -> See example 3
 
     Repeat can be used to create a new string with the original string repeated. -> See example 4
+
  */
 
 

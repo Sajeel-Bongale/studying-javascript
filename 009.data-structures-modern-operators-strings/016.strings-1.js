@@ -21,6 +21,7 @@
     The returned value is type string.
 
     This boxing and unboxing happens automatically and the user is unaware of this.
+
  */
 
 ///////////////////////////////////////
@@ -66,6 +67,6 @@ checkMiddleSeat('23C'); // prints You got lucky �
 checkMiddleSeat('3E'); // prints You got the middle seat 😬
 
 // Example 6
-console.log(new String('jonas')); // peints [String: 'jonas']
+console.log(new String('jonas')); // prints [String: 'jonas']
 console.log(typeof new String('jonas')); // prints object
 console.log(typeof new String('jonas').slice(1)); // prints string
