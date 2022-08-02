@@ -11,7 +11,7 @@
     they take the default values.
 
     One key thing to remember is that you cannot skip values in between when using default parameters, instead
-    you can send the values in between as explicit default arguments. -> See example 2
+    you can send the values in between as explicit undefined values. -> See example 2
 
     You can use default or set parameters declared chronologically in advance in computations
     that occur after that parameter value has been set. -> See Example 3

@@ -12,7 +12,7 @@
     008.how-js-works-behind-the-scenes/007.primitive-vs-objects.js for more details ) the outside variable
     retains the original value while the change is only visible inside the function. -> See example 1
     This however, is not true for objects such as passenger passed as the second argument. The outside value
-    is changed when the value in the function is update. This is because objects are reference data types
+    is changed when the value in the function is updated. This is because objects are reference data types
     and their references are passed in the functions.
     Therefore when you update the values inside the function, it is the same object in the heap memory
     that is being updated, so those changes are reflected across the files.
@@ -20,7 +20,7 @@
     That is why, you should be mindful of the consequences when you pass objects as arguments
     to functions.
 
-    Note: In Javascript there is no pass by reference, unlike how it appears to be. ALl the passed arguments
+    Note: In Javascript there is no pass by reference, unlike how it appears to be. All the passed arguments
     are passed by value and never by reference.
     When you pass objects, we do in fact pass in a reference. So the memory address of the object.
     However, that reference itself is still a value. It's simply a value that contains a memory address.
@@ -33,6 +33,7 @@ const jonas = {
     name: 'Jonas Schmedtmann',
     passport: 24739479284,
 };
+
 const checkIn = function (flightNum, passenger) {
     flightNum = 'LH999';
     passenger.name = 'Mr. ' + passenger.name;
@@ -42,6 +43,7 @@ const checkIn = function (flightNum, passenger) {
         alert('Wrong passport!');
     }
 };
+
 // Example 1 (uncomment for example)
 // checkIn(flight, jonas);
 // console.log(flight);

@@ -8,7 +8,7 @@
     As shown in example 1, we create a new function called bookEW, bookLH and bookLX which are created
     using new objects as their this.
 
-    Once the method reference is acquired, we can then call the method with the necessary paramters
+    Once the method reference is acquired, we can then call the method with the necessary parameters
     as per its original signature.
 
     Using this, we can have the same method work by defining its this with different objects
@@ -26,6 +26,7 @@
     use call or apply because they immediately execute the function there itself.
     What event listeners expect is a reference to the method which is only available
     using the bind method. -> See example 3
+
  */
 
 // Test setup
