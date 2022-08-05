@@ -28,6 +28,7 @@
     of the map method. Any calculations and modifications can be performed in the mapping function.
 
     Remember to pass an array or an array like data structure as the first argument to the from method.
+
  */
 
 
