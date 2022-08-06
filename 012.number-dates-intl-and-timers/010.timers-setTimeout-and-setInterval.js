@@ -17,7 +17,7 @@
     executed. -> See example 2
 
     This behaviour where the console in the further is executed before the callback is known as asynchronous JS.
-    The way it works is explained in section 016.asynchronous-javascript.
+    The way it works is explained in section 016.asynchronous-javascript-async-await-and-ajax.
 
     One issue when using callback functions is that there is no apparent way in which you can pass arguments
     to the callback function. You can however, do so, by passing these arguments to the setTimeout function

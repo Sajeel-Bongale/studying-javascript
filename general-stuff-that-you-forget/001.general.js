@@ -30,12 +30,29 @@
     const mainCopy = [...main]
 
     ----------------
-    // TODO Write the different ways for array traversal using different for loops
+    Array traversal using different for loops
+    let console.log(numberz = Array.from({ length: 10 }, (_, i) => i + 1);
+
     1. Regular for loop
+    for(let i = 0; i < 10; i++) {
+        console.log(numbers[i]);
+    }
 
     2. for...of loop for array traversal
+    for(const number of numbers) {
+        console.log(number);
+    }
 
     3. forEach loop
+    numbers.forEach((number, index, originalArray) => {
+        console.log(number);
+    });
+
+    4. map
+    const mappedNumbers = numbers.map((number, index, originalArray) => {
+        console.log(number);
+        return number + 1;
+    });
 
     ----------------
     Object traversal and looping
