@@ -21,6 +21,7 @@ const renderCountry = function (data, className = '') {
     countriesContainer.style.opacity = 1;
 }
 
+
 // 002.first-ajax-call-xmlhttprequest
 // XML HTTP Request
 const getCountryData = function (country) {
@@ -38,6 +39,7 @@ const getCountryData = function (country) {
 // Uncomment to run 002.first-ajax-call-xmlhttprequest
 // getCountryData('portugal');
 // getCountryData('ireland');
+
 
 // 004.callback-hell
 const getCountryAndNeighbourData = function (country) {
@@ -67,3 +69,8 @@ const getCountryAndNeighbourData = function (country) {
 }
 
 getCountryAndNeighbourData('usa');
+
+
+// 005.promises-and-fetch-api
+let response = fetch('https://restcountries.com/v2/name/portugal');
+console.log(response) // prints Promise {<pending>}
