@@ -67,10 +67,33 @@ const getCountryAndNeighbourData = function (country) {
         });
     });
 }
-
-getCountryAndNeighbourData('usa');
+// Uncomment to run 004.callback-hell
+// getCountryAndNeighbourData('usa');
 
 
 // 005.promises-and-fetch-api
 let response = fetch('https://restcountries.com/v2/name/portugal');
 console.log(response) // prints Promise {<pending>}
+
+
+// 006.consuming-promises
+const getCountryDataUsingPromise = function (country) {
+    /*
+    fetch(`https://restcountries.com/v2/name/${country}`)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(console.log(data));
+            renderCountry(data[0]);
+        });
+    */
+
+
+    // Simplified version with arrow functions
+    fetch(`https://restcountries.com/v2/name/${country}`)
+        .then(response => response.json())
+        .then(data => renderCountry(data[0]));
+};
+
+getCountryDataUsingPromise('portugal');
