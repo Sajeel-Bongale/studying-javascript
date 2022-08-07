@@ -96,4 +96,26 @@ const getCountryDataUsingPromise = function (country) {
         .then(data => renderCountry(data[0]));
 };
 
-getCountryDataUsingPromise('portugal');
+// Uncomment to run 006.consuming-promises
+// getCountryDataUsingPromise('portugal');
+
+
+// 007.chaining-promises
+const getNeighbouringCountryDataUsingPromises = function (country) {
+    fetch(`https://restcountries.com/v2/name/${country}`)
+        .then(response => response.json())
+        .then(data => {
+            renderCountry(data[0]);
+            const neighbour = data[0].borders[0];
+
+            if(!neighbour) return;
+
+            // Country 2
+            // Ensure that the new promise is returned from here
+            return fetch(`https://restcountries.com/v2/alpha/${neighbour}`);
+        })
+        .then(response => response.json())
+        .then(data => renderCountry(data, 'neighbour'));
+};
+
+getNeighbouringCountryDataUsingPromises('germany');
