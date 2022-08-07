@@ -33,5 +33,34 @@
 
  */
 
-// NOTE: The code for this example is in the folder
+// NOTE: The html code for running this example is in the folder
 // 016.asynchronous-javascript-async-await-and-ajax/000.asynchronous-javascript
+
+// 004.callback-hell
+const getCountryAndNeighbourData = function (country) {
+
+    // AJAX call country 1
+    let request = new XMLHttpRequest();
+    request.open('GET', `https://restcountries.com/v2/name/${country}`);
+    request.send();
+
+    request.addEventListener('load', function () {
+        const [data] = JSON.parse(this.responseText);
+        renderCountry(data);
+
+        // Get neighbour country 2
+        let [neighbour] = data.borders;
+
+        if(!neighbour) return;
+
+        let request2 = new XMLHttpRequest();
+        request2.open('GET', `https://restcountries.com/v2/alpha/${neighbour}`);
+        request2.send();
+        request2.addEventListener('load', function (response) {
+            const data2 = JSON.parse(this.responseText);
+            renderCountry(data2, 'neighbour');
+        });
+    });
+}
+
+getCountryAndNeighbourData('usa');

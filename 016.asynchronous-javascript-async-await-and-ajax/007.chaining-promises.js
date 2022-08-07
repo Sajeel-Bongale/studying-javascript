@@ -21,5 +21,26 @@
 
  */
 
-// NOTE: The code for this example is in the folder
+// NOTE: The html code for running this example is in the folder
 // 016.asynchronous-javascript-async-await-and-ajax/000.asynchronous-javascript
+
+// 007.chaining-promises
+const getNeighbouringCountryDataUsingPromises = function (country) {
+    fetch(`https://restcountries.com/v2/name/${country}`)
+        .then(response => response.json())
+        .then(data => {
+            renderCountry(data[0]);
+            const neighbour = data[0].borders[0];
+
+            if(!neighbour) return;
+
+            // Country 2
+            // Ensure that the new promise is returned from here
+            return fetch(`https://restcountries.com/v2/alpha/${neighbour}`);
+        })
+        .then(response => response.json())
+        .then(data => renderCountry(data, 'neighbour'));
+};
+
+getNeighbouringCountryDataUsingPromises('botswana');
+

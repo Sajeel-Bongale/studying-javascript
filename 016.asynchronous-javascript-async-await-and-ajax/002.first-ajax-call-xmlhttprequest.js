@@ -34,5 +34,22 @@
 
  */
 
-// NOTE: The code for this example is in the folder
+// NOTE: The html code for running this example is in the folder
 // 016.asynchronous-javascript-async-await-and-ajax/000.asynchronous-javascript
+
+// 002.first-ajax-call-xmlhttprequest
+// XML HTTP Request
+const getCountryData = function (country) {
+    let request = new XMLHttpRequest();
+    request.open('GET', `https://restcountries.com/v2/name/${country}`);
+    request.send();
+
+    request.addEventListener('load', function () {
+        const [data] = JSON.parse(this.responseText);
+        console.log(data);
+        renderCountry(data);
+    });
+}
+
+getCountryData('portugal');
+getCountryData('ireland');

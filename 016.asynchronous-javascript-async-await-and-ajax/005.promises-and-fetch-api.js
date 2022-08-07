@@ -45,5 +45,10 @@
 
  */
 
-// NOTE: The code for this example is in the folder
+// NOTE: The html code for running this example is in the folder
 // 016.asynchronous-javascript-async-await-and-ajax/000.asynchronous-javascript
+
+// 005.promises-and-fetch-api
+let response = fetch('https://restcountries.com/v2/name/portugal');
+console.log(response) // prints Promise {<pending>}
+

@@ -26,5 +26,27 @@
 
  */
 
-// NOTE: The code for this example is in the folder
+// NOTE: The html code for running this example is in the folder
 // 016.asynchronous-javascript-async-await-and-ajax/000.asynchronous-javascript
+
+// 006.consuming-promises
+const getCountryDataUsingPromise = function (country) {
+    /*
+    fetch(`https://restcountries.com/v2/name/${country}`)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(console.log(data));
+            renderCountry(data[0]);
+        });
+    */
+
+
+    // Simplified version with arrow functions
+    fetch(`https://restcountries.com/v2/name/${country}`)
+        .then(response => response.json())
+        .then(data => renderCountry(data[0]));
+};
+
+getCountryDataUsingPromise('portugal');
