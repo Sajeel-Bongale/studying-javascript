@@ -43,8 +43,7 @@ const goToSlide = function (slide) {
 
 goToSlide(0);
 
-// Example 2
-buttonRight.addEventListener('click', function () {
+const nextSlide = function () {
     // Example 3
     if (currentSlide === maxSlideIndex - 1) {
         currentSlide = 0;
@@ -52,15 +51,22 @@ buttonRight.addEventListener('click', function () {
         currentSlide++;
     }
     goToSlide(currentSlide);
+    activateDot(currentSlide);
 
-});
+};
 
-// Example 4
-buttonLeft.addEventListener('click', function () {
+// Example 2
+buttonRight.addEventListener('click', nextSlide);
+
+const previousSlide = function () {
     if (currentSlide === 0) {
         currentSlide = maxSlideIndex - 1;
     } else {
         currentSlide--;
     }
     goToSlide(currentSlide);
-});
+    activateDot(currentSlide);
+};
+
+// Example 4
+buttonLeft.addEventListener('click', previousSlide);
